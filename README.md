@@ -48,6 +48,7 @@ The jQuery Mory is licensed under [The MIT License](http://www.opensource.org/li
 	});
 
 ### Custom label for show more or less text:
+
 	$('#text').mory({
     	expandText   : 'show more',
 	    collapseText : 'show less'
@@ -55,9 +56,9 @@ The jQuery Mory is licensed under [The MIT License](http://www.opensource.org/li
 
 ### Custom reticence element:
 
-$('#text').mory({
-    reticence: ' [...] '
-});
+	$('#text').mory({
+	    reticence: ' [...] '
+	});
 
 ### Changing the settings globally:
 
