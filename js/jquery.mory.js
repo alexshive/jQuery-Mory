@@ -51,7 +51,9 @@
 				self.textlink = $('<a />', { 'class': 'mory-link', href: 'javascript:void(0);', title: self.opt.expandText, html: self.opt.expandText });
 				self.moreLess = $('<span />', { 'class': 'mory-more' }).append(self.textlink).wrap('<span/>');
 
-				if(!self.opt.useClasses) {
+				if(self.opt.useClasses) {
+					self.textcontent.addClass('text');
+				} else {
 					self.textcontent.hide();
 				}
 
@@ -117,7 +119,7 @@
 	};
 
 	$.fn.mory.defaults = {
-		useClasses		: true,
+		useClasses		: false,
 		collapseText	: 'read less',
 		expandText		: 'read more',
 		reticence		: '... ',

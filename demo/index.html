@@ -10,13 +10,27 @@
 	<title>jQuery Mory</title>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
 	<style type="text/css">
+
+			@-webkit-keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
 		
 			/* Example use of the useClasses propery */
-			.mory-content {
+			.mory-content.text {
 				display: none;
+				opacity: 0;
 			}
-			.mory-content.open {
+			.mory-content.text.open {
 				display: inline;
+				opacity: 1;
+				-webkit-animation: fadeIn 1s;
+    			animation: fadeIn 1s;
 			}
 
 			/* This CSS does not belong to the plugin. */
